@@ -1,0 +1,123 @@
+/* ========================= */
+/* == custom banner image == */
+/* ========================= */
+/*
+
+	Frontmatter class
+		cssClass: custom-banner
+
+	
+	Add this after your frontmatter (replace xyz.jpg with your own image path:
+		<div class="banner-image" style="background-image:url('https://xyz.jpg');"></div>
+
+	Optionally Frontmatter Classes to further adjust image size, image display position,
+	image display fade percentage or solid, image border radius and frontmatter shift
+		
+		image size (height):
+		cb-sz1, cb-sz2, cb-sz3, cb-sz4, cb-sz5
+
+		image position:
+		cb-pos1, cb-pos2, cb-pos3, cb-pos4, cb-pos5
+
+		image bottom fade:
+		cb-fd1, cb-fd2, cb-fd3, cb-fd4, cb-fd5
+
+		solid:
+		.cb-solid
+
+		border radius:
+		.cb-br
+
+		frontmatter shift (vertically from top):
+		cb-fm1, cb-fm2, cb-fm3, cb-fm4, cb-fm5
+*/
+
+
+/* ------------------------------------------------------------------ */
+/* -- configure default: move banner image to top, fade/size, etc. -- */
+/* ------------------------------------------------------------------ */
+.custom-banner .custom-banner-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-size: cover; 
+	background-position: 50% 20%;
+	overflow: hidden;  
+	mask-image: linear-gradient(to bottom,black -50%,transparent);
+	-webkit-mask-image: linear-gradient(to bottom,black -50%,transparent);
+	height: 240px;
+}
+
+/* -------------------------- */
+/* -- image size (height)  -- */
+/* -------------------------- */
+.cb-sz1 .custom-banner-image { height: 150px; }
+.cb-sz2 .custom-banner-image { height: 200px; }
+.cb-sz3 .custom-banner-image { height: 240px; }
+.cb-sz4 .custom-banner-image { height: 300px; }
+.cb-sz5 .custom-banner-image { height: 350px; }
+
+/* ----------------------------- */
+/* -- image position from top -- */
+/* ----------------------------- */
+.cb-pos1 .custom-banner-image { background-position: 50% 0%; }
+.cb-pos2 .custom-banner-image { background-position: 50% 25%; }
+.cb-pos3 .custom-banner-image { background-position: 50% 50%; }
+.cb-pos4 .custom-banner-image { background-position: 50% 75%; }
+.cb-pos5 .custom-banner-image { background-position: 50% 100%; }
+
+/* --------------------------- */
+/* -- image fade percentage -- */
+/* --------------------------- */
+.cb-fd1 .custom-banner-image {
+	mask-image: linear-gradient(to bottom,black 20%,transparent);
+	-webkit-mask-image: linear-gradient(to bottom,black 20%,transparent);
+}
+.cb-fd2 .custom-banner-image {
+	mask-image: linear-gradient(to bottom,black 0%,transparent);
+	-webkit-mask-image: linear-gradient(to bottom,black 0%,transparent);
+}
+.cb-fd3 .custom-banner-image {
+	mask-image: linear-gradient(to bottom,black -20%,transparent);
+	-webkit-mask-image: linear-gradient(to bottom,black -20%,transparent);
+}
+.cb-fd4 .custom-banner-image {
+	mask-image: linear-gradient(to bottom,black -50%,transparent);
+	-webkit-mask-image: linear-gradient(to bottom,black -50%,transparent);
+}
+.cb-fd5 .custom-banner-image {
+	mask-image: linear-gradient(to bottom,black -75%,transparent);
+	-webkit-mask-image: linear-gradient(to bottom,black -75%,transparent);
+}
+
+/* ----------------------------------- */
+/* -- display solid image (no fade) -- */
+/* ----------------------------------- */
+.cb-solid .custom-banner-image {
+	mask-image: unset !important;
+	-webkit-mask-image: unset !important;
+}
+
+/* -------------------------------- */
+/* -- add border-radius to image -- */
+/* -------------------------------- */
+.cb-br .custom-banner-image { border-radius: 17px !important; }
+
+/* ------------------------------------------------------------------ */
+/* -- push frontmatter container down to give room to banner image -- */
+/* ------------------------------------------------------------------ */
+.custom-banner .frontmatter-container {
+	position: relative;
+	z-index: 2;
+	margin-top: 150px;
+}
+.cb-sz1 .frontmatter-container { margin-top: 110px; }
+.cb-sz2 .frontmatter-container { margin-top: 120px; }
+.cb-sz3 .frontmatter-container { margin-top: 150px; }
+.cb-sz4 .frontmatter-container { margin-top: 210px; }
+.cb-fm1 .frontmatter-container { margin-top: 0px !important; }
+.cb-fm2 .frontmatter-container { margin-top: 20px !important; }
+.cb-fm3 .frontmatter-container { margin-top: 50px !important; }
+.cb-fm4 .frontmatter-container { margin-top: 80px !important; }
+.cb-fm5 .frontmatter-container { margin-top: 100px !important; }
