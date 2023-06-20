@@ -2,10 +2,8 @@
 /* == custom banner image == */
 /* ========================= */
 /*
-
 	Frontmatter class
 		cssClass: custom-banner
-
 	
 	Add this after your frontmatter (replace xyz.jpg with your own image path:
 		<div class="banner-image" style="background-image:url('https://xyz.jpg');"></div>
@@ -23,15 +21,17 @@
 		cb-fd1, cb-fd2, cb-fd3, cb-fd4, cb-fd5
 
 		solid:
-		.cb-solid
+		cb-solid
 
 		border radius:
-		.cb-br
+		cb-br
 
 		frontmatter shift (vertically from top):
 		cb-fm1, cb-fm2, cb-fm3, cb-fm4, cb-fm5
-*/
 
+		frontmatter bottom (move frontmatter to bottom of page)
+		cb-fm-bottom
+*/
 
 /* ------------------------------------------------------------------ */
 /* -- configure default: move banner image to top, fade/size, etc. -- */
@@ -47,6 +47,7 @@
 	mask-image: linear-gradient(to bottom,black -50%,transparent);
 	-webkit-mask-image: linear-gradient(to bottom,black -50%,transparent);
 	height: 240px;
+	pointer-events: none;
 }
 
 /* -------------------------- */
@@ -121,3 +122,21 @@
 .cb-fm3 .frontmatter-container { margin-top: 50px !important; }
 .cb-fm4 .frontmatter-container { margin-top: 80px !important; }
 .cb-fm5 .frontmatter-container { margin-top: 100px !important; }
+
+/* ---------------------------------------- */
+/* -- move frontmatter to bottom of page -- */
+/* ---------------------------------------- */
+.cb-fm-bottom .markdown-preview-sizer.markdown-preview-section {
+	display: flex;
+	flex-direction: column;
+}
+.cb-fm-bottom .mod-header + div { order: 2; }
+.cb-fm-bottom.cb-fm1 .mod-header { margin-bottom: 0px !important; }
+.cb-fm-bottom.cb-fm2 .mod-header { margin-bottom: 20px !important; }
+.cb-fm-bottom.cb-fm3 .mod-header { margin-bottom: 50px !important; }
+.cb-fm-bottom.cb-fm4 .mod-header { margin-bottom: 80px !important; }
+.cb-fm-bottom.cb-fm5 .mod-header { margin-bottom: 100px !important; }
+.cb-fm-bottom .mod-header + div + div + div,
+.cb-fm-bottom .mod-header + div + div + div + div {
+	z-index: 1;
+}
