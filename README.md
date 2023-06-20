@@ -18,7 +18,7 @@ copy the `custom-banner-image.css` file to your Obsidian snippets folder and ena
 	<div class="banner-image" style="background-image:url('https://xyz.jpg');"></div>
 	```
 
-3. Optionally add these Frontmatter classes to further adjust properies like ```image size`, `image display position`, `image fade percentage`, `image border radius`, and `frontmatter shift`
+4. Optionally add these Frontmatter classes to further adjust properies like ```image size`, `image display position`, `image fade percentage`, `image border radius`, and `frontmatter shift`
 ``
     - **banner image size** (_height_)
       ```
@@ -70,3 +70,8 @@ copy the `custom-banner-image.css` file to your Obsidian snippets folder and ena
 
 ![](example-markup.jpg)
 ![](example-reading-view.jpg)
+
+---
+
+generate URL's for publicly shared google drive images here:
+https://github.com/jparkerweb/google-drive-image-url-generator
