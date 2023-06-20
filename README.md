@@ -57,13 +57,18 @@ copy the `custom-banner-image.css` file to your Obsidian snippets folder and ena
        cb-br
        ```
 
-     - **frontmatter shift** _(push frontmatter container down to give room to banner image_)
+     - **frontmatter shift** (_push frontmatter container down to give room to banner image_)
        ```
        cb-fm1
        cb-fm2
        cb-fm3
        cb-fm4
        cb-fm5
+       ```
+
+     - **frontmatter bottom** (_move frontmatter to bottom of page_)
+       ```
+       cb-fm-bottom
        ```
 
 ### Example
