@@ -137,6 +137,11 @@
 .cb-fm-bottom.cb-fm4 .mod-header { margin-bottom: 80px !important; }
 .cb-fm-bottom.cb-fm5 .mod-header { margin-bottom: 100px !important; }
 .cb-fm-bottom .mod-header + div + div + div,
-.cb-fm-bottom .mod-header + div + div + div + div {
+.cb-fm-bottom .mod-header + div + div + div + div,
+.cb-fm-bottom .mod-header + div + div + div + div + div {
 	z-index: 1;
+}
+.cb-fm-bottom span.top-links,
+.cb-fm-bottom span.top-links ~ a.internal-link {
+	top: 20px !important;
 }
