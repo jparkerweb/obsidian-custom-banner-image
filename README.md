@@ -21,17 +21,17 @@ copy the `custom-banner-image.css` file to your Obsidian snippets folder and ena
 4. Optionally add these Frontmatter classes to further adjust properies like `image size`, `image display position`, `image fade percentage`, `image border radius`, and `frontmatter shift`
     - **banner image size** (_height_)
       ```
-      cb-sz1
-      cb-sz2
-      cb-sz3
-      cb-sz4
-      cb-sz5
+      cb-size1
+      cb-size2
+      cb-size3 [default]
+      cb-size4
+      cb-size5
       ```
 
     - **image position** (_shift image position in banner_)
       ```
       cb-pos1
-      cb-pos2
+      cb-pos2 [default]
       cb-pos3
       cb-pos4
       cb-pos5
@@ -39,11 +39,11 @@ copy the `custom-banner-image.css` file to your Obsidian snippets folder and ena
 
      - **image fade** (_transparency used as image fades from top to bottom_)
        ```
-       cb-fd1
-       cb-fd2
-       cb-fd3
-       cb-fd4
-       cb-fd5
+       cb-fade1
+       cb-fade2
+       cb-fade3
+       cb-fade4 [default]
+       cb-fade5
        ```
 
      - **display solid image** (_no fade_)
@@ -53,16 +53,16 @@ copy the `custom-banner-image.css` file to your Obsidian snippets folder and ena
   
      - **add border-radius to image**
        ```
-       cb-br
+       cb-bradius
        ```
 
-     - **frontmatter shift** (_push frontmatter container down to give room to banner image_)
+     - **push frontmatter** (_push frontmatter container down to give room to banner image_)
        ```
-       cb-fm1
-       cb-fm2
-       cb-fm3
-       cb-fm4
-       cb-fm5
+       cb-fm-push1
+       cb-fm-push2
+       cb-fm-push3
+       cb-fm-push4
+       cb-fm-push5 [default]
        ```
 
      - **frontmatter bottom** (_move frontmatter to bottom of page_)
