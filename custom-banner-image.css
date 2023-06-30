@@ -11,25 +11,25 @@
 	Optionally Frontmatter Classes to further adjust image size, image display position,
 	image display fade percentage or solid, image border radius and frontmatter shift
 		
-		image size (height):
-		cb-sz1, cb-sz2, cb-sz3, cb-sz4, cb-sz5
+		image size (height) [default cb-size3]:
+		cb-size1, cb-size2, cb-size3, cb-size4, cb-size5
 
-		image position:
+		image position [default cb-pos2]:
 		cb-pos1, cb-pos2, cb-pos3, cb-pos4, cb-pos5
 
-		image bottom fade:
-		cb-fd1, cb-fd2, cb-fd3, cb-fd4, cb-fd5
+		image bottom fade [default cb-fade4]:
+		cb-fade1, cb-fade2, cb-fade3, cb-fade4, cb-fade5
 
-		solid:
+		solid [default not included]:
 		cb-solid
 
-		border radius:
-		cb-br
+		border radius [default not included]:
+		cb-bradius
 
-		frontmatter shift (vertically from top):
-		cb-fm1, cb-fm2, cb-fm3, cb-fm4, cb-fm5
+		push frontmatter (vertically from top) [default cb-fm-push5]:
+		cb-fm-push1, cb-fm-push2, cb-fm-push3, cb-fm-push4, cb-fm-push5
 
-		frontmatter bottom (move frontmatter to bottom of page)
+		frontmatter bottom (move frontmatter to bottom of page) [default not included]:
 		cb-fm-bottom
 */
 
@@ -42,7 +42,7 @@
 	left: 0;
 	right: 0;
 	background-size: cover; 
-	background-position: 50% 20%;
+	background-position: 50% 25%;
 	overflow: hidden;  
 	mask-image: linear-gradient(to bottom,black -50%,transparent);
 	-webkit-mask-image: linear-gradient(to bottom,black -50%,transparent);
@@ -53,11 +53,11 @@
 /* -------------------------- */
 /* -- image size (height)  -- */
 /* -------------------------- */
-.cb-sz1 .custom-banner-image { height: 150px; }
-.cb-sz2 .custom-banner-image { height: 200px; }
-.cb-sz3 .custom-banner-image { height: 240px; }
-.cb-sz4 .custom-banner-image { height: 300px; }
-.cb-sz5 .custom-banner-image { height: 350px; }
+.cb-size1 .custom-banner-image { height: 150px; }
+.cb-size2 .custom-banner-image { height: 200px; }
+.cb-size3 .custom-banner-image { height: 240px; }
+.cb-size4 .custom-banner-image { height: 300px; }
+.cb-size5 .custom-banner-image { height: 350px; }
 
 /* ----------------------------- */
 /* -- image position from top -- */
@@ -71,23 +71,23 @@
 /* --------------------------- */
 /* -- image fade percentage -- */
 /* --------------------------- */
-.cb-fd1 .custom-banner-image {
+.cb-fade1 .custom-banner-image {
 	mask-image: linear-gradient(to bottom,black 20%,transparent);
 	-webkit-mask-image: linear-gradient(to bottom,black 20%,transparent);
 }
-.cb-fd2 .custom-banner-image {
+.cb-fade2 .custom-banner-image {
 	mask-image: linear-gradient(to bottom,black 0%,transparent);
 	-webkit-mask-image: linear-gradient(to bottom,black 0%,transparent);
 }
-.cb-fd3 .custom-banner-image {
+.cb-fade3 .custom-banner-image {
 	mask-image: linear-gradient(to bottom,black -20%,transparent);
 	-webkit-mask-image: linear-gradient(to bottom,black -20%,transparent);
 }
-.cb-fd4 .custom-banner-image {
+.cb-fade4 .custom-banner-image {
 	mask-image: linear-gradient(to bottom,black -50%,transparent);
 	-webkit-mask-image: linear-gradient(to bottom,black -50%,transparent);
 }
-.cb-fd5 .custom-banner-image {
+.cb-fade5 .custom-banner-image {
 	mask-image: linear-gradient(to bottom,black -75%,transparent);
 	-webkit-mask-image: linear-gradient(to bottom,black -75%,transparent);
 }
@@ -103,7 +103,7 @@
 /* -------------------------------- */
 /* -- add border-radius to image -- */
 /* -------------------------------- */
-.cb-br .custom-banner-image { border-radius: 17px !important; }
+.cb-bradius .custom-banner-image { border-radius: 17px !important; }
 
 /* ------------------------------------------------------------------ */
 /* -- push frontmatter container down to give room to banner image -- */
@@ -113,15 +113,15 @@
 	z-index: 2;
 	margin-top: 150px;
 }
-.cb-sz1 .frontmatter-container { margin-top: 110px; }
-.cb-sz2 .frontmatter-container { margin-top: 120px; }
-.cb-sz3 .frontmatter-container { margin-top: 150px; }
-.cb-sz4 .frontmatter-container { margin-top: 210px; }
-.cb-fm1 .frontmatter-container { margin-top: 0px !important; }
-.cb-fm2 .frontmatter-container { margin-top: 20px !important; }
-.cb-fm3 .frontmatter-container { margin-top: 50px !important; }
-.cb-fm4 .frontmatter-container { margin-top: 80px !important; }
-.cb-fm5 .frontmatter-container { margin-top: 100px !important; }
+.cb-size1 .frontmatter-container { margin-top: 110px; }
+.cb-size2 .frontmatter-container { margin-top: 120px; }
+.cb-size3 .frontmatter-container { margin-top: 150px; }
+.cb-size4 .frontmatter-container { margin-top: 210px; }
+.cb-fm-push1 .frontmatter-container { margin-top: 0px !important; }
+.cb-fm-push2 .frontmatter-container { margin-top: 35px !important; }
+.cb-fm-push3 .frontmatter-container { margin-top: 75px !important; }
+.cb-fm-push4 .frontmatter-container { margin-top: 90px !important; }
+.cb-fm-push5 .frontmatter-container { margin-top: 150px !important; }
 
 /* ---------------------------------------- */
 /* -- move frontmatter to bottom of page -- */
@@ -131,11 +131,11 @@
 	flex-direction: column;
 }
 .cb-fm-bottom .mod-header + div { order: 2; }
-.cb-fm-bottom.cb-fm1 .mod-header { margin-bottom: 0px !important; }
-.cb-fm-bottom.cb-fm2 .mod-header { margin-bottom: 20px !important; }
-.cb-fm-bottom.cb-fm3 .mod-header { margin-bottom: 50px !important; }
-.cb-fm-bottom.cb-fm4 .mod-header { margin-bottom: 80px !important; }
-.cb-fm-bottom.cb-fm5 .mod-header { margin-bottom: 100px !important; }
+.cb-fm-bottom.cb-fm-push1 .mod-header { margin-bottom: 0px !important; }
+.cb-fm-bottom.cb-fm-push2 .mod-header { margin-bottom: 35px !important; }
+.cb-fm-bottom.cb-fm-push3 .mod-header { margin-bottom: 75px !important; }
+.cb-fm-bottom.cb-fm-push4 .mod-header { margin-bottom: 90px !important; }
+.cb-fm-bottom.cb-fm-push5 .mod-header { margin-bottom: 150px !important; }
 .cb-fm-bottom .mod-header + div + div + div,
 .cb-fm-bottom .mod-header + div + div + div + div,
 .cb-fm-bottom .mod-header + div + div + div + div + div {
