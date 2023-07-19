@@ -144,4 +144,5 @@
 .cb-fm-bottom span.top-links,
 .cb-fm-bottom span.top-links ~ a.internal-link {
 	top: 20px !important;
+	flex-basis: 0;
 }
