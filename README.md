@@ -1,4 +1,4 @@
-# 🖼 Obsidian Custom Banner Image
+# 🚩 Obsidian Custom Banner Image
 css snippet to allow for custom banner images per note
 
 ---
