@@ -65,6 +65,11 @@ copy the `custom-banner-image.css` file to your Obsidian snippets folder and ena
        cb-fm-push5 [default]
        ```
 
+     - **hide frontmatter**
+       ```
+       cb-fm-hidden
+       ```
+
      - **frontmatter bottom** (_move frontmatter to bottom of page_)
        ```
        cb-fm-bottom
