@@ -134,7 +134,7 @@
 .cb-fm-auto-expand .mod-header > .metadata-container {
     overflow: hidden;
     max-height: 45px !important;
-    transition: 300ms ease-in-out all;
+    transition: 700ms ease-in-out all;
     border: 1px solid transparent;
     border-radius: 12px;
 }
