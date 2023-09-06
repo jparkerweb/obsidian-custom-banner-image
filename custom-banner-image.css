@@ -29,8 +29,8 @@
 		push frontmatter (vertically from top) [default cb-fm-push5]:
 		cb-fm-push1, cb-fm-push2, cb-fm-push3, cb-fm-push4, cb-fm-push5
 
-		frontmatter bottom (move frontmatter to bottom of page) [default not included]:
-		cb-fm-bottom
+		auto expand frontmatter on hover [default not included]:
+		cb-fm-auto-expand 
 
 		hide frontmatter [default not included]:
 		cb-fm-hidden
@@ -126,37 +126,23 @@
 .cb-fm-push4 .frontmatter-container { margin-top: 90px !important; }
 .cb-fm-push5 .frontmatter-container { margin-top: 150px !important; }
 
-/* ---------------------------------------- */
-/* -- move frontmatter to bottom of page -- */
-/* ---------------------------------------- */
-.cb-fm-bottom .markdown-preview-sizer.markdown-preview-section {
-	display: flex;
-	flex-direction: column;
+/* ----------------------------- */
+/* -- auto expand frontmatter -- */
+/* ----------------------------- */
+.cb-fm-auto-expand .mod-header > .metadata-container > .metadata-properties-heading:hover { cursor: n-resize; }
+.cb-fm-auto-expand .mod-header > .metadata-container > .metadata-properties-heading > div[class*='-icon'] { display: none; }
+.cb-fm-auto-expand .mod-header > .metadata-container {
+    overflow: hidden;
+    max-height: 45px !important;
+    transition: 300ms ease-in-out all;
+    border: 1px solid transparent;
+    border-radius: 12px;
 }
-.cb-fm-bottom .mod-header { order: 1; }
-.cb-fm-bottom .mod-header + div { order: 2; }
-.cb-fm-bottom.cb-fm-push1 .mod-header { margin-bottom: 0px !important; }
-.cb-fm-bottom.cb-fm-push2 .mod-header { margin-bottom: 35px !important; }
-.cb-fm-bottom.cb-fm-push3 .mod-header { margin-bottom: 75px !important; }
-.cb-fm-bottom.cb-fm-push4 .mod-header { margin-bottom: 90px !important; }
-.cb-fm-bottom.cb-fm-push5 .mod-header { margin-bottom: 150px !important; }
-.cb-fm-bottom .mod-header + div + div + div,
-.cb-fm-bottom .mod-header + div + div + div + div,
-.cb-fm-bottom .mod-header + div + div + div + div + div {
-	z-index: 1;
+.cb-fm-auto-expand .mod-header > .metadata-container:hover {
+    max-height: 800px !important; /*if needed, ajust max height you expect any of your frontmatter to be*/
+    border-color: #ffffff85;
+    padding: 10px;
 }
-.cb-fm-bottom span.top-links,
-.cb-fm-bottom span.top-links ~ a.internal-link {
-	top: 20px !important;
-	flex-basis: 0;
-}
-
-.cb-fm-bottom .markdown-preview-pusher { height: 240px !important; }
-.cb-size1.cb-fm-bottom .markdown-preview-pusher { height: 150px !important; }
-.cb-size2.cb-fm-bottom .markdown-preview-pusher { height: 200px !important; }
-.cb-size3.cb-fm-bottom .markdown-preview-pusher { height: 240px !important; }
-.cb-size4.cb-fm-bottom .markdown-preview-pusher { height: 300px !important; }
-.cb-size5.cb-fm-bottom .markdown-preview-pusher { height: 350px !important; }
 
 /* ---------------------- */
 /* -- hide frontmatter -- */
