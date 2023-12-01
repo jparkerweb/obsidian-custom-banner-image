@@ -3,7 +3,7 @@
 /* ====================================== */
 /*
 	Frontmatter class
-		cssClass: custom-banner
+		cssclasses: custom-banner
 	
 	Add this after your frontmatter (replace xyz.jpg with your own image path:
 		<div class="banner-image" style="background-image:url('https://xyz.jpg');"></div>
@@ -111,20 +111,21 @@
 /* ------------------------------------------------------------------ */
 /* -- push frontmatter container down to give room to banner image -- */
 /* ------------------------------------------------------------------ */
-.custom-banner .frontmatter-container {
+.custom-banner .frontmatter-container,
+.custom-banner .metadata-container {
 	position: relative;
 	z-index: 2;
 	margin-top: 150px;
 }
-.cb-size1 .frontmatter-container { margin-top: 110px; }
-.cb-size2 .frontmatter-container { margin-top: 120px; }
-.cb-size3 .frontmatter-container { margin-top: 150px; }
-.cb-size4 .frontmatter-container { margin-top: 210px; }
-.cb-fm-push1 .frontmatter-container { margin-top: 0px !important; }
-.cb-fm-push2 .frontmatter-container { margin-top: 35px !important; }
-.cb-fm-push3 .frontmatter-container { margin-top: 75px !important; }
-.cb-fm-push4 .frontmatter-container { margin-top: 90px !important; }
-.cb-fm-push5 .frontmatter-container { margin-top: 150px !important; }
+.cb-size1 .frontmatter-container, .cb-size1 .metadata-container { margin-top: 110px; }
+.cb-size2 .frontmatter-container, .cb-size2 .metadata-container { margin-top: 120px; }
+.cb-size3 .frontmatter-container, .cb-size3 .metadata-container { margin-top: 150px; }
+.cb-size4 .frontmatter-container, .cb-size4 .metadata-container { margin-top: 210px; }
+.cb-fm-push1 .frontmatter-container, .cb-fm-push1 .metadata-container { margin-top: 0px !important; }
+.cb-fm-push2 .frontmatter-container, .cb-fm-push2 .metadata-container { margin-top: 35px !important; }
+.cb-fm-push3 .frontmatter-container, .cb-fm-push3 .metadata-container { margin-top: 75px !important; }
+.cb-fm-push4 .frontmatter-container, .cb-fm-push4 .metadata-container { margin-top: 90px !important; }
+.cb-fm-push5 .frontmatter-container, .cb-fm-push5 .metadata-container { margin-top: 150px !important; }
 
 /* ----------------------------- */
 /* -- auto expand frontmatter -- */
@@ -137,6 +138,7 @@
     transition: 700ms ease-in-out all;
     border: 1px solid transparent;
     border-radius: 12px;
+	padding: 10px;
 }
 .cb-fm-auto-expand .mod-header > .metadata-container:hover {
     max-height: 800px !important; /*if needed, ajust max height you expect any of your frontmatter to be*/
