@@ -82,5 +82,12 @@ copy the `custom-banner-image.css` file to your Obsidian snippets folder and ena
 
 ---
 
-generate URL's for publicly shared google drive images here:
+tip ⇢ unsplash API URL's are supported:  
+https://source.unsplash.com/1600x900?search,terms,here
+
+generate URL's for publicly shared google drive images here:  
 https://github.com/jparkerweb/google-drive-image-url-generator
+
+---
+
+_note: live preview not supported_
