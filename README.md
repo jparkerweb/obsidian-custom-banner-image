@@ -1,5 +1,5 @@
 # 🚩 Obsidian Custom Banner Image
-css snippet to allow for custom banner images per note
+css snippet to allow for custom banner images per note in _Reading View_ (live preview not supported)
 
 ---
 
