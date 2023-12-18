@@ -91,3 +91,13 @@ https://github.com/jparkerweb/google-drive-image-url-generator
 ---
 
 _note: live preview not supported_
+
+---
+
+### My Obsidian GitHub Projects
+
+- 🚩 [Obsidian Custom Banner Image](https://github.com/jparkerweb/obsidian-custom-banner-image)
+- 🦶 [Obsidian Rich Foot](https://github.com/jparkerweb/obsidian-rich-foot)
+- 🌅 [Obsidian Image From Field](https://github.com/jparkerweb/obsidian-image-from-field/blob/main/README.md)
+- 🌟 [Obsidian Element Enhancer](https://github.com/jparkerweb/obsidian-element-enhancer)
+- ⏹ [Obsidian Bullet Cards](https://github.com/jparkerweb/obsidian-bullet-cards)
