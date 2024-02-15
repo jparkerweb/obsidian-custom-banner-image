@@ -149,10 +149,4 @@
 /* ---------------------- */
 /* -- hide frontmatter -- */
 /* ---------------------- */
-.cb-fm-hidden .mod-header { display: none !important; }
-.cb-fm-hidden .markdown-preview-pusher { height: 240px !important; }
-.cb-size1.cb-fm-hidden .markdown-preview-pusher { height: 150px !important; }
-.cb-size2.cb-fm-hidden .markdown-preview-pusher { height: 200px !important; }
-.cb-size3.cb-fm-hidden .markdown-preview-pusher { height: 240px !important; }
-.cb-size4.cb-fm-hidden .markdown-preview-pusher { height: 300px !important; }
-.cb-size5.cb-fm-hidden .markdown-preview-pusher { height: 350px !important; }
+.cb-fm-hidden .mod-header { visibility: hidden !important; }
