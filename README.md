@@ -1,6 +1,8 @@
 # 🚩 Obsidian Custom Banner Image
 css snippet to allow for custom banner images per note in _Reading View_ (live preview not supported)
 
+**an official plugin was created from this project: [pexels-banner](https://obsidian.md/plugins?id=pexels-banner)**
+
 ---
 
 ### Installation
@@ -88,8 +90,8 @@ _note: live preview not supported_
 
 ### My Obsidian GitHub Projects
 
-- 🚩 [Obsidian Custom Banner Image](https://github.com/jparkerweb/obsidian-custom-banner-image)
-- 🦶 [Obsidian Rich Foot](https://github.com/jparkerweb/obsidian-rich-foot)
+- 🚩 [Obsidian Pexels Banner](https://github.com/jparkerweb/pexels-banner)
+- 🦶 [Obsidian Rich Foot](https://github.com/jparkerweb/rich-foot)
 - 🌅 [Obsidian Image From Field](https://github.com/jparkerweb/obsidian-image-from-field/blob/main/README.md)
 - 🌟 [Obsidian Element Enhancer](https://github.com/jparkerweb/obsidian-element-enhancer)
 - ⏹ [Obsidian Bullet Cards](https://github.com/jparkerweb/obsidian-bullet-cards)
